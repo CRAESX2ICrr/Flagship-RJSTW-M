@@ -1,1 +1,6 @@
 # Flagship-RJSTW-M
+
+A React website to display the current flagship phones and its specs from every single brand
+
+Frontend-React(Next.js), Javascript, Tailwind
+Backend- Nodejs(Nestjs), MongoDB
