@@ -35,7 +35,7 @@ export default function Feed() {
         </div>
       ))}
 
-      {/* 📞 Special Flip Phone */}
+      {/* Flip Phone */}
         <div className="flex flex-col items-center gap-2 shrink-0">
         {/* 🔹 Top half */}
         <div className="relative w-56 h-[14rem] overflow-hidden rounded-t-[1.5rem] border-[6px] border-black/60 shadow-2xl bg-black">
@@ -48,7 +48,7 @@ export default function Feed() {
           />
         </div>
 
-        {/* ⚫ Hinge */}
+        {/* Hinge */}
         <div className="w-40 h-3 bg-gray-800 rounded-full" />
 
         {/* 🔹 Bottom half */}

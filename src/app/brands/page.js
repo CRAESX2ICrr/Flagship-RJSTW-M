@@ -5,17 +5,37 @@ import { useState } from "react";
 export default function BrandsPage() {
   const [hoveredBrand, setHoveredBrand] = useState(null);
 
-  // 📱 Constant phone image sources
-  const phoneImages = {
-    apple: "/images/brphones/iphone.png",
-    samsung: "/images/brphones/galaxy.png",
-  };
+// Constant phone image sources
+const phoneImages = {
+  apple: "/images/brphones/iphone.png",
+  samsung: "/images/brphones/galaxy.png",
+  google: "/images/brphones/pixel.png",
+  oneplus: "/images/brphones/onephone.png",
+  asus: "/images/brphones/rogphone.png",
+  xiaomi: "/images/brphones/miphone.png",
+  vivo: "/images/brphones/viphone.png",
+  oppo: "/images/brphones/oppphone.png",
+  motorola: "/images/brphones/motophone.png",
+  realme: "/images/brphones/realphone.png",
+  iqoo: "/images/brphones/iqphone.png",
+};
 
-  // 🏷️ Constant brand pill data
-  const brands = [
-    { id: "apple", name: "Apple", logo: "/images/brands/apple.png", highlight: "iPhone", },
-    { id: "samsung", name: "Samsung", logo: "/images/brands/samsung.png", highlight: "Galaxy", },
-  ];
+  
+// Constant brand pill data
+const brands = [
+  { id: "apple", name: "Apple", logo: "/images/brands/apple.png", highlight: "iPhone" },
+  { id: "samsung", name: "Samsung", logo: "/images/brands/samsung.png", highlight: "Galaxy" },
+  { id: "google", name: "Google", logo: "/images/brands/google.png", highlight: "Pixel" },
+  { id: "oneplus", name: "OnePlus", logo: "/images/brands/oneplus.png", highlight: "13" },
+  { id: "asus", name: "ASUS", logo: "/images/brands/asus.png", highlight: "ROG Phone" },
+  { id: "xiaomi", name: "Xiaomi", logo: "/images/brands/xiaomi.png", highlight: "Mi Series" },
+  { id: "vivo", name: "Vivo", logo: "/images/brands/vivo.png", highlight: "V Series" },
+  { id: "oppo", name: "Oppo", logo: "/images/brands/oppo.png", highlight: "Find / Reno" },
+  { id: "motorola", name: "Motorola", logo: "/images/brands/motorola.png", highlight: "Moto" },
+  { id: "realme", name: "Realme", logo: "/images/brands/realme.png", highlight: "Realme GT" },
+  { id: "iqoo", name: "iQOO", logo: "/images/brands/iqoo.png", highlight: "iQOO Neo" },
+];
+
 
   return (
     <section className="flex flex-col gap-6 p-12 relative min-h-screen overflow-hidden">
