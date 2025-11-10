@@ -1,6 +1,7 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
+import ColorBends from "@/components/ColorBends";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -21,10 +22,30 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gray-50 text-gray-900`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased relative overflow-hidden`}
       >
+        {/* 🌈 Background */}
+        <div className="absolute inset-0 -z-10">
+          <ColorBends
+            colors={["#ff5c7a", "#00f8f4ff", "#00ffd1"]}
+            rotation={150}
+            speed={0.3}
+            scale={1.5}
+            frequency={1.5}
+            warpStrength={1.2}
+            mouseInfluence={1.0}
+            parallax={0.8}
+            noise={0.0}
+            transparent={false}
+          />
+        </div>
+
+        {/* 🧭 Header */}
         <Header />
-        <main className="max-w-6xl mx-auto p-6 pt-24">{children}</main>
+
+        <div className="relative pt-24 text-gray-100">
+          {children}
+        </div>
       </body>
     </html>
   );
