@@ -24,7 +24,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased relative overflow-hidden`}
       >
-        {/* 🌈 Background */}
+        {/* Background */}
         <div className="absolute inset-0 -z-10">
           <ColorBends
             colors={["#ff5c7a", "#00f8f4ff", "#00ffd1"]}
@@ -40,7 +40,7 @@ export default function RootLayout({ children }) {
           />
         </div>
 
-        {/* 🧭 Header */}
+        {/* Header */}
         <Header />
 
         <div className="relative pt-24 text-gray-100">
