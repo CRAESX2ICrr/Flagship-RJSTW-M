@@ -22,10 +22,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased relative overflow-hidden`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased relative overflow-hidden min-h-screen`}
       >
         {/* Background */}
-        <div className="absolute inset-0 -z-10">
+        <div className="fixed inset-0 -z-10">
           <ColorBends
             colors={["#ff5c7a", "#00f8f4ff", "#00ffd1"]}
             rotation={150}
@@ -40,13 +40,13 @@ export default function RootLayout({ children }) {
           />
         </div>
 
-        {/* Header */}
         <Header />
 
         <div className="relative pt-24 text-gray-100">
           {children}
         </div>
       </body>
+
     </html>
   );
 }
