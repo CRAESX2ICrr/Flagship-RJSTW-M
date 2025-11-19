@@ -1,6 +1,6 @@
-import Feed from "@/components/Feed";
+import Feed from "@/components/CardHero";
 import Articles from "@/components/Articles";
-import ShuffleHero from "@/components/ShuffleHero";   // ✅ FIXED
+import ShuffleHero from "@/components/ShuffleHero";   
 
 export default async function Home() {
   await new Promise((resolve) => setTimeout(resolve, 500));
@@ -8,11 +8,7 @@ export default async function Home() {
   return (
     <main>
 
-      <Feed />
-
-      <ShuffleHero />   {/* ✅ Now it will appear */}
-
-      <Articles />
+      <ShuffleHero /> 
 
     </main>
   );
